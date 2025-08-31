@@ -3,7 +3,6 @@ class Author: # define author
         self.name = name
         self.books = []
 
-    
     def __str__(self): # see if theres titles in the list and set up how info will be displayed 
         titles = ', '.join(self.books) or 'No published books'
         return f' Author name: {self.name}. Books: {titles}'
